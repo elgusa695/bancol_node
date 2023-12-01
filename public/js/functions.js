@@ -1,7 +1,8 @@
 /**
  * CONFIGURACION 
  */
-    const API_URL = 'http://127.0.0.1:8080'; // Cambiar según convenga.
+    // const API_URL = 'http://127.0.0.1:8080'; // Cambiar según convenga.
+    const API_URL = 'https://decmf396sfy7f.cloudfront.net'; // Cambiar según convenga.
 
 
 
