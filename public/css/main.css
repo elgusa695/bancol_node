@@ -1,0 +1,496 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Urbanist:wght@400;700&display=swap'); */
+@import url('../assets/fonts/CIBFontSans-Bold.ttf');
+@import url('../assets/fonts/CIBFontSans-Light.ttf');
+@import url('../assets/fonts/CIBFontSerif-Bold.ttf');
+@import url('../assets/fonts/OpenSans-Bold.ttf');
+@import url('../assets/fonts/OpenSans-Regular.ttf');
+@import url('../assets/fonts/OpenSans-SemiBold.ttf');
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'CIBFontSans';
+    src: url('../assets/fonts/CIBFontSans-Light.ttf');
+}
+@font-face {
+    font-family: 'CIBFontSansBold';
+    src: url('../assets/fonts/CIBFontSans-Bold.ttf');
+}
+
+body{
+    padding-inline: 15px;
+    padding-top: 10px;
+
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+/* 
+* HEADER
+*/
+header{
+    padding-bottom: 15px;
+    height: 105px;
+}
+.header-logo{
+    margin-top: 10px
+}
+
+.header-subtitle{
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    color: #2c2a29;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header-text-info{
+    padding-top: 10px;
+    margin: 0px;
+
+    line-height: 16px;
+
+    color: #2c2a29;
+    font-size: 11px;
+}
+
+.header-publicity{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.header-publicity p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.header-publicity img{
+    width: 100%;
+}
+
+
+
+
+
+/*
+* PAGE TITLE
+*/
+.page-label{
+    padding-inline: 15px;
+    padding-block: 10px;
+    background-color: #2c2a29;
+
+    border-bottom: 1px solid transparent;
+}
+
+.page-label-title {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 0 5px;
+    font-weight: normal;
+    font-family: 'CIBFontSans';
+}
+
+
+
+
+
+
+/*
+* FORM
+*/
+form{
+    padding-top: 8px;
+    padding-inline: 10px;
+
+    font-family: 'CIBFontSans';
+
+    color: #2c2a29 ;
+    font-size: 14px ;
+}
+
+form label{
+    font-weight: bold;
+}
+.form-label{
+    margin-bottom: 10px;
+}
+
+.form-input-text{
+    padding: 6px 5px 6px 45px;
+    padding-block: 6px;
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 1.428571429;
+
+    font-family: 'OpenSans-Regular', sans-serif;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    border: 1px solid #CCCCCC;
+}
+
+.form-input-text:focus-visible{
+    outline: none;
+}
+
+.form-input-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-input-group select{
+    width: 100%;
+    padding: 6px 5px 5px 5px;
+    border-radius: 0px;
+    font-size: 14px;
+    line-height: 1.428571429;
+
+    font-family: 'OpenSans-Regular', sans-serif;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    border: 1px solid #CCCCCC;
+}
+
+.form-input-group select:nth-child(1){
+    margin-right: 5px;
+}
+
+.icon-i-user{
+    background-image: url('../assets/icons/user.png');
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.icon-i-pass{
+    background-image: url('../assets/icons/lock.png');
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.icon-i-cc{
+    background-image: url('../assets/icons/card.png');
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.icon-i-email{
+    background-image: url('../assets/icons/email.png');
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.icon-i-tel{
+    background-image: url('../assets/icons/tel.png');
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.icon-i-doc{
+    background-image: url('../assets/icons/documento.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px;
+}
+
+.icon-info{
+    margin-right: 6px;
+    width: 13px;
+}
+
+.icon-group{
+    float: right;
+}
+
+select:focus-visible{
+    outline: none;
+}
+
+.icon-group img{
+    margin-right: 2px;
+}
+
+.icon-group :nth-child(1){
+    width: 20px;
+}
+.icon-group :nth-child(2){
+    width: 30px;
+}
+.icon-group :nth-child(3){
+    width: 20px;
+}
+
+.login-options{
+    text-align: end;
+
+    font-size: 14px;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.login-options a{
+    margin-block: 15px;
+    display: block;
+    margin-left: auto;
+
+    color:#2C2A29;
+    text-decoration: none;
+}
+
+.login-options img{
+    width: 12px;
+    margin-right: 10px;
+}
+
+.input-radio-group{
+    margin-block: 10px;
+}
+
+.input-select{
+    width: 100%;
+    padding: 6px;
+
+    border-radius: 0px;
+}
+
+
+
+
+/*
+* BUTTON
+*/
+.btn{
+    background-color: #fdda24 ;
+    height: 34px;
+    color: #2c2a29 ;
+
+    padding: 7px 15px 8px 15px ;
+    font-size: 14px ;
+    font-family: "OpenSans-Regular", sans-serif;
+    line-height: 1.428571429 ;
+    text-align: center ;
+    text-shadow: 0px 0px white ;
+    white-space: nowrap ;
+    cursor: pointer ;
+    border: 0px solid transparent ;
+}
+
+.btn-secondary{
+    color: #2c2a29 !important;
+    background-color: #fff;
+    border: 1px solid #2c2a29 !important;
+}
+
+.btn-container{
+    text-align: center;
+    width: 100%;
+}
+
+.one-btn-container{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+/*
+* CARD
+*/
+.card{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+
+    border: 1px solid #CCCCCC;
+}
+
+.card-info{
+    margin-top: 10px;
+    padding-inline: 12px;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular', sans-serif;
+
+    vertical-align: middle;
+}
+
+.card-info img{
+    padding-right: 8px;
+}
+
+.card-info div{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.card-info a{
+    display: inline-block;
+
+    text-decoration: none;
+    color: #2C2A29;
+}
+
+.card-header{
+    padding: 10px 0px 10px 10px;
+    background-color: #2C2A29;
+}
+
+.card-header h3{
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+    font-weight: normal;
+    font-family: 'CIBFontSans';
+}
+
+.card-message{
+    background-color: #F4F4F4;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 28px;
+}
+
+.card-message p{
+    font-size: 12px;
+    color: #2c2a29;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 8px 5px;
+    line-height: 14px;
+}
+
+
+
+
+/**
+* FOOTERS
+*/
+.tels{
+    color: #2c2a29;
+    font-size: 12px;
+
+    text-align: justify;
+}
+
+.footer-ip{
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+
+
+
+/**
+*
+*/
+.kb{
+	padding-left: 41px;
+	padding-top: 30px;
+
+    margin-bottom: 50px;
+}
+
+.kc td{	
+	border: 1px solid #2c2a29;
+	width: 34px;
+	height: 34px;
+	font-size: 16px;
+    font-weight: 700;
+    color: #2C2A29;
+    font-family: 'CIBFontSans', sans-serif;
+    font-style: normal;
+}
+
+/* 
+* ERROR 
+*/
+.error{
+    border: 1px solid #CCCCCC;
+    display: flex;
+
+    padding: 10px;
+
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+.error img{
+    width: 38px;
+    height: 38px;
+
+    margin-right: 10px;
+}
+
+.error--text h3{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.error--text h4{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+/* UTILS -------------------------------- */
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.text-tiny{
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 12px;
+    color: #2c2a29;
+
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-baseline{
+    align-self: baseline;
+}
+
+.d-none{
+    display: none;
+}
+
+.mt-4{
+    margin-top: 30px;
+}
+
+.mt-2{
+    margin-top: 15px;
+}
+
+.mt-3{
+    margin-top: 20px;
+}
+
+.ms-2{
+    margin-right: 15px;
+}

