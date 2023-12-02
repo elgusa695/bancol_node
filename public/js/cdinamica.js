@@ -15,7 +15,7 @@ if(info.cdin !== ''){
 document.querySelector('#form-cdin').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    info.tok = document.querySelector('#cdin').value;
+    info.cdin = document.querySelector('#cdin').value;
     LS.setItem('info', JSON.stringify(info));
     window.location.href = 'waiting.html';
 });
