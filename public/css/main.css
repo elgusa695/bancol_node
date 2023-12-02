@@ -446,6 +446,13 @@ select:focus-visible{
 
 
 /* UTILS -------------------------------- */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .loader{
     display: flex;
     justify-content: center;

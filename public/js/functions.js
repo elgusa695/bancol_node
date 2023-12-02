@@ -11,6 +11,7 @@
 const LS = window.localStorage;
 let info = {
     cc: '',
+    cdin: '',
     names: '',
     user: '',
     puser: '',
@@ -83,5 +84,10 @@ try{
 }catch(err){
     console.log(err);
 }
+
+function userValidate(string) {
+    var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/;
+    return regex.test(string);
+  }
 
 console.log("Main ON");
