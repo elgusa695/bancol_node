@@ -1,7 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Urbanist:wght@400;700&display=swap'); */
-@import url('../assets/fonts/CIBFontSans-Bold.ttf');
-@import url('../assets/fonts/CIBFontSans-Light.ttf');
-@import url('../assets/fonts/CIBFontSerif-Bold.ttf');
+@import url('../assets/fonts/Bancol-Bold.ttf');
+@import url('../assets/fonts/Bancol-Light.ttf');
 @import url('../assets/fonts/OpenSans-Bold.ttf');
 @import url('../assets/fonts/OpenSans-Regular.ttf');
 @import url('../assets/fonts/OpenSans-SemiBold.ttf');
@@ -11,12 +9,12 @@
     src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 @font-face {
-    font-family: 'CIBFontSans';
-    src: url('../assets/fonts/CIBFontSans-Light.ttf');
+    font-family: 'Bancol';
+    src: url('../assets/fonts/Bancol-Light.ttf');
 }
 @font-face {
-    font-family: 'CIBFontSansBold';
-    src: url('../assets/fonts/CIBFontSans-Bold.ttf');
+    font-family: 'BancolBold';
+    src: url('../assets/fonts/Bancol-Bold.ttf');
 }
 
 body{
@@ -92,7 +90,7 @@ header{
     color: #fff;
     margin: 0 0 0 5px;
     font-weight: normal;
-    font-family: 'CIBFontSans';
+    font-family: 'Bancol';
 }
 
 
@@ -107,7 +105,7 @@ form{
     padding-top: 8px;
     padding-inline: 10px;
 
-    font-family: 'CIBFontSans';
+    font-family: 'Bancol';
 
     color: #2c2a29 ;
     font-size: 14px ;
@@ -349,7 +347,7 @@ select:focus-visible{
     color: #fff;
     margin: 0px;
     font-weight: normal;
-    font-family: 'CIBFontSans';
+    font-family: 'Bancol';
 }
 
 .card-message{
@@ -406,7 +404,7 @@ select:focus-visible{
 	font-size: 16px;
     font-weight: 700;
     color: #2C2A29;
-    font-family: 'CIBFontSans', sans-serif;
+    font-family: 'Bancol', sans-serif;
     font-style: normal;
 }
 
